@@ -15,6 +15,8 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 
+NeoBundle 'Shougo/neocomplcache.vim'
+NeoBundle 'vim-jp/cpp-vim'
 NeoBundle 'vim-ruby/vim-ruby'
 
 call neobundle#end()
@@ -24,4 +26,6 @@ filetype plugin indent on
 NeoBundleCheck
 
 autocmd FileType ruby set ts=2 sw=2
+
+let g:neocomplcache_enable_at_startup = 1
 
