@@ -5,5 +5,9 @@ export DOTFILES="$(cd $(dirname $0) && pwd)"
 while read file; do
     ! grep -q "^$file\$" $DOTFILES/installed_files &&
         ln -s $DOTFILES/$file $HOME/$file &&
-        echo "$file" >> $DOTFILES/installed_files
+        echo "$file" >> $DOTFILES/installed_files &&
+        echo "    Made symlink $HOME/$file -> $DOTFILES/$file"
 done
+
+echo "    Done"
+
