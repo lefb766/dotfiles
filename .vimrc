@@ -6,6 +6,12 @@ set ts=4 sw=4
 set autoindent
 set cindent
 
+set mouse=n
+set cursorline
+
+set list
+set lcs=eol:$,tab:>-,trail:~
+
 if has('vim_starting')
   set nocompatible
   set runtimepath+=~/.vim/bundle/neobundle.vim/
