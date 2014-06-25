@@ -11,8 +11,8 @@ while read file; do
     fi
 done
 
-echo "    Cleaned installed_files"
 printf "" > installed_files
+echo "    Cleaned installed_files"
 
 echo "    Done"
 
